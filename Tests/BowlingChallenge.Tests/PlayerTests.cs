@@ -1,17 +1,17 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace BowlingChallengeTests
+namespace BowlingChallenge.Tests
 {
     [TestClass]
     public class PlayerTests
     {
         [TestMethod]
-        public void NameValid()
+        public void PlayerNameValid()
         {
             //Arrange
             //Instance of player class
-            Player player = new Player
+            var player = new Player
             {
                 //using object initatior
                 Name = "Jon",
