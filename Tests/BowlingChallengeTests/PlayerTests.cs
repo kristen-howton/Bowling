@@ -1,17 +1,15 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using BowlingChallenge.Models;
+using System;
+using Xunit;
 
-namespace BowlingChallenge.Tests
+namespace BowlingChallengeTests
 {
-    [TestClass]
     public class PlayerTests
     {
-        [TestMethod]
+        [Fact]
         public void PlayerNameValid()
         {
-            //Arrange
-            //Instance of player class
-            var player = new Player
+            Player player = new Player
             {
                 //using object initatior
                 Name = "Jon",
@@ -21,7 +19,9 @@ namespace BowlingChallenge.Tests
             //Act
             string actual = player.Name;
             //Assert 
-            Assert.AreEqual(expected, actual);
+            Assert.Equal(expected, actual);
+
         }
     }
 }
+
